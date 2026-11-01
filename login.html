@@ -1,0 +1,109 @@
+<!---Alex Annikie
+    2208624
+    Ms. Anuli
+    Wed. 6pm
+    October 31,2026-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Register</title>
+<link rel="stylesheet" href="style.css">
+<link
+rel="icon"
+type="image/png"
+href="favicon-32x32.png">
+
+</head>
+
+<body>
+<img src="pattern-lines.svg"
+     alt=""
+     class="pattern-lines">
+
+<img src="pattern-circle.svg"
+     alt=""
+     class="pattern-circle">
+
+<img src="pattern-squiggly-line-top.svg"
+     alt=""
+     class="top-squiggle">
+
+<img src="pattern-squiggly-line-bottom-desktop.svg"
+     alt=""
+     class="bottom-squiggle">
+<header>
+<a href="index.html" class="logo-link">
+    <img src="logo-full.svg" alt="Coding Conf Logo" class="logo">
+  </a>
+<h1>
+    Your Journey to Coding Conf
+    2026 Starts Here!
+</h1>
+</header>
+
+<main>
+
+<form id="registrationForm" novalidate>
+
+<div class="form-group">
+<label for="fullName">Full Name</label>
+<input type="text" id="fullName">
+<small class="error" id="nameError"></small>
+</div>
+
+<div class="form-group">
+<label for="email">Email Address</label>
+<input type="email" id="email">
+<small class="error" id="emailError"></small>
+</div>
+
+<div class="form-group">
+<label for="github">GitHub Username</label>
+<input type="text" id="github">
+<small class="error" id="githubError"></small>
+</div>
+
+<div class="form-group">
+<label class="upload-box">
+
+    <img
+    src="icon-upload.svg"
+    alt="Upload Icon">
+    <input type="file"
+    id="avatar"
+    accept=".jpg,.jpeg,.png">
+    <span>
+        Drag and drop or click to upload
+    </span>
+
+</label>
+
+<div class="upload-note">
+
+    <img
+    src="icon-info.svg"
+    alt="Info">
+
+    <span>
+        Upload your photo (JPG or PNG, max size: 500KB).
+    </span>
+
+</div>
+<small class="error" id="avatarError"></small>
+</div>
+
+<button type="submit">
+Generate Ticket
+</button>
+
+</form>
+
+</main>
+
+<script src="validation.js"></script>
+
+</body>
+</html>
